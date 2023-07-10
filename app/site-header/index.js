@@ -6,7 +6,7 @@ export default function SiteHeader() {
         <header className='flex flex-row  w-full justify-between items-center p-5 text-white lg:px-40 bg-mpink-100 font-noto'>
 
             <div className='flex flex-row gap-4 items-center  '>
-                <Image loading="lazy" src='/logo64White.svg' width={64} height={64} alt='longli app logo' />
+                <Image loading="lazy" src='/logo64white.svg' width={64} height={64} alt='longli app logo' />
                     <div className='flex flex-col gap-1 border-l px-4'>
                         <h3 className='capitalize  text-xl font-titan mounir-text-shadow tracking-widest'>Longli</h3>
                         <h4 className=' text-xs uppercase  mounir-text-shadow'>learning becomes fun</h4>
