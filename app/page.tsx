@@ -6,6 +6,31 @@ import song from '../public/song.png';
 import updateImage from '../public/update.png';
 import imagetick from '../public/imagetick.png';
 
+ import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Longli - تطبيق لتعلم اللغة الإنجليزية بطريقة ممتعة',
+  description: "Longli تطبيق لتعلم اللغة الإنجليزية بطريقة ممتعة، استكشف اللغة الإنجليزية بأسلوب تفاعلي وشيق. ابدأ التعلم اليوم!",
+  keywords: ["english", "learn", "app", 'fun', 'تعلم'],
+  openGraph: {
+    title: 'Longli - تطبيق لتعلم اللغة الإنجليزية بطريقة ممتعة',
+    description: "Longli تطبيق لتعلم اللغة الإنجليزية بطريقة ممتعة، استكشف اللغة الإنجليزية بأسلوب تفاعلي وشيق. ابدأ التعلم اليوم!",
+    url: 'https://longli.app',
+    siteName: 'longli',
+    images: [
+      {
+        url: '/fb-og.png',
+        width: 1200,
+        height: 630,
+        alt: 'longli app open grpah image',
+      },
+      
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+
+}
 
 export default function Home() {
   return (
