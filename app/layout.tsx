@@ -1,6 +1,5 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import SiteHeader from './site-header'
 import SiteFooter from './site-footer'
 import { inter, noto_sans_arabic, titane_one } from './fonts'
