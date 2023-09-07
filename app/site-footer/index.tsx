@@ -11,8 +11,18 @@ export default function Footer(){
                         <a href="https://www.facebook.com/profile.php?id=100094400536750" target="_blank">فيسبوك</a>
                     </button>
                     <button className="border rounded-xl p-4">
+                        <Link href={'/contact'}>انستجرام</Link>
+                    </button>
+                    <button className="border rounded-xl p-4">
+                        <Link href={'/contact'}>يوتيوب</Link>
+                    </button>
+                    <button className="border rounded-xl p-4">
+                        <Link href={'/contact'}>تيكتوك</Link>
+                    </button>
+                    <button className="border rounded-xl p-4">
                         <Link href={'/contact'}>اتصل بنا</Link>
                     </button>
+
                 </div>
                 <div className='flex flex-row gap-4 align-middle items-center justify-center'>
                     <p>
