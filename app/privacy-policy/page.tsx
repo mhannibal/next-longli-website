@@ -41,11 +41,7 @@ export default function Page() {
             Email: <a href="mailto:kalima@gmail.com">kalima@gmail.com</a><br/>    
             Please retain a copy of this Privacy Policy for your records.</p>
          </address>
-
-            
-
-        </section >
-
+    </section >
     )
 
 }
