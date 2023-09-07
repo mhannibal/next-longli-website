@@ -200,8 +200,6 @@ export default function Home() {
             </div>
         </div>
     </section>
-
-
       <section
         className='flex flex-col bg-white text-gray-900 justify-center items-center align-middle gap-4  mx-auto py-32  md:my-52'>
         <h2 className="font-noto text-2xl mb-8">تطبيق مجاني لتعلم الانجليزية</h2>
