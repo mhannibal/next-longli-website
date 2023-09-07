@@ -20,7 +20,7 @@ export default function Footer(){
                         انتاج مؤسسة كلمة 2023
                     </p>
                     <Image className='w-7' src={kalimaLogo} alt='kalima company logo' />
-                <Link href={'/privacy-policy'}>privacy-policy</Link>
+                <Link href={'/privacy-policy'}>سياسة الخصوصية</Link>
                 </div>
                 
             </footer>
