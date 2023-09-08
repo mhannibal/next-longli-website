@@ -16,10 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className={`${inter.className}  ${titane_one.variable} ${noto_sans_arabic.variable}`}>
+        <GoogleAnalytics />
         <SiteHeader />
         {children}
         <SiteFooter />
-        <GoogleAnalytics />
       </body>
     </html>
   )
