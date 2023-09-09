@@ -9,13 +9,13 @@ const MixPanelAnalytics = () => {
     const pathname = usePathname()
     const searchParams = useSearchParams()
   
-    useEffect(() => {
-        if ( mixpanel.__loaded && pathname) { 
-            mixpanel.track('Page View', {
-               'Page Type': pathname,
-            });
-        }
-   }, [pathname, searchParams]);
+//     useEffect(() => {
+//         if ( mixpanel.__loaded && pathname) { 
+//             mixpanel.track('Page View', {
+//                'Page Type': pathname,
+//             });
+//         }
+//    }, [pathname, searchParams]);
 
   
 
