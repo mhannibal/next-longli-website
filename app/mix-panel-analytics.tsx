@@ -9,7 +9,11 @@ const MixPanelAnalytics = () => {
     const pathname = usePathname()
     const searchParams = useSearchParams()
   
-    useEffect(() => {
+    useEffect(() => { 
+        mixpanel.init(`"${process.env.NEXT_PUBLIC_MIXPANEL_TOKEN}"`, { debug: true, track_pageview: true, persistence: 'localStorage' });
+    }, [])
+
+    useEffect(() => { 
         if (pathname) { 
             mixpanel.track('Page View', {
                'Page Type': pathname,
@@ -17,17 +21,9 @@ const MixPanelAnalytics = () => {
         }
    }, [pathname, searchParams]);
 
-  
 
     return (
         <>
-          <Script
-            id="mixpanel_script"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-                __html: `mixpanel.init("${process.env.NEXT_PUBLIC_MIXPANEL_TOKEN}", { debug: true, track_pageview: true, persistence: 'localStorage' });`
-            }}
-          />
         </>
     )
 }
