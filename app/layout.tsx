@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <MixPanelAnalytics />
+      <GoogleAnalytics />
       <body  className={`${inter.className}  ${titane_one.variable} ${noto_sans_arabic.variable}`}>
 
         <SiteHeader />
