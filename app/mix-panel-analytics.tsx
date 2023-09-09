@@ -23,7 +23,7 @@ const MixPanelAnalytics = () => {
         <>
           <Script>
             {
-              `mixpanel.init("${process.env.NEXT_MIXPANEL_TOKEN}", { debug: true, track_pageview: true, persistence: 'localStorage' });`
+              `mixpanel.init("${process.env.NEXT_PUBLIC_MIXPANEL_TOKEN}", { debug: true, track_pageview: true, persistence: 'localStorage' });`
             }
           </Script>
         </>
