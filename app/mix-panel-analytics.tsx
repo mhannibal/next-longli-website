@@ -21,7 +21,7 @@ const MixPanelAnalytics = () => {
 
     return (
         <>
-          <Script>
+          <Script id="mixpanel_script">
             {
               `mixpanel.init("${process.env.NEXT_PUBLIC_MIXPANEL_TOKEN}", { debug: true, track_pageview: true, persistence: 'localStorage' });`
             }
