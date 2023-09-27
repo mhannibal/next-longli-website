@@ -60,14 +60,14 @@ export default function Home() {
             </div>
 
             <div className="w-full">
-              <Image
+              {/* <Image
                 className=' cursor-pointer'
                 src='/google-play-badge.png'
                 alt="google play download badge"
                 width={300}
                 height={28}
-              />
-              <span className='text-white flex justify-center '>قريبا ...</span>
+              /> */}
+              <span className='text-white flex justify-center font-light text-4xl '>...  على البلاي ستور قريبا ...</span>
             </div>
           </div>
         </div>
