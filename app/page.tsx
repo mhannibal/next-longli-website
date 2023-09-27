@@ -54,7 +54,7 @@ export default function Home() {
                   ابدأ التعلم
                 </p>
               </div>
-              <div className='text-center'>
+              <div className='text-center '>
                 قريبا
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
                 width={300}
                 height={28}
               />
-              <span className='text-white flex justify-center '>حمل التطبيق مجانا</span>
+              <span className='text-white flex justify-center '>قريبا ...</span>
             </div>
           </div>
         </div>
