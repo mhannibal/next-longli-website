@@ -1,7 +1,12 @@
+import { cookies } from 'next/headers'
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SiteHeader() {
+export default async function SiteHeader() {
+    const supabase = createServerComponentClient({ cookies })
+    const { data, error } = await supabase.auth.getUser()
+
     return (
         <header className='flex flex-row  w-full justify-between items-center p-5 text-white lg:px-40 bg-mpink-100 font-noto'>
 
@@ -28,9 +33,13 @@ export default function SiteHeader() {
                         <li><a href="#contact">تحميل</a></li>
                         <li><Link href={'/about'}>تعرف علينا</Link></li>
                         <li><Link href={'/contact'}>اتصل بنا</Link></li>
-                    </ul>
+                        { data.user && (
+                            <form action="/auth/login" method="post">
+                                <button formAction='/auth/logout'>تسجيل الخروج</button>
+                            </form>
+                        )}
+                     </ul>
             </nav>
-
             <ul className="hidden md:flex flex-row-reverse gap-4 opacity-0 md:opacity-100">
                 <li><Link href={'/'}>الرئيسية</Link></li>    
                 <li><a href="#portfolio">المدونة</a></li>
@@ -38,7 +47,11 @@ export default function SiteHeader() {
                 <li><a href="#contact">تحميل</a></li>
                 <li><Link href={'/about'}>تعرف علينا</Link></li>
                 <li><Link href={'/contact'}>اتصل بنا</Link></li>
-                        
+                { data.user && (
+                            <form action="/auth/login" method="post">
+                                <button formAction='/auth/logout'>تسجيل الخروج</button>
+                            </form>
+                        )}        
             </ul>
         </header>
     )
