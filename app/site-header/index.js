@@ -1,10 +1,9 @@
-import { cookies } from 'next/headers'
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import Image from "next/image";
 import Link from "next/link";
+import { createServerSupabaseClient } from '../serverSupabaseClient';
 
 export default async function SiteHeader() {
-    const supabase = createServerComponentClient({ cookies })
+    const supabase = createServerSupabaseClient()
     const { data, error } = await supabase.auth.getUser()
 
     return (

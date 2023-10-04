@@ -1,10 +1,9 @@
-import { cookies } from 'next/headers'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
+import { createServerSupabaseClient } from '@/app/serverSupabaseClient';
 import Image from 'next/image';
 import { redirect } from 'next/navigation'
 
 export default async function DeleteAccountPage() {
-    const supabase = createServerComponentClient({ cookies })
+    const supabase = createServerSupabaseClient()
     const { data, error } = await supabase.auth.getUser()
     if (error) console.log(error);
     if (data) console.log(data);
