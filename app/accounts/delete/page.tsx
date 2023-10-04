@@ -37,7 +37,7 @@ export default async function DeleteAccountPage() {
                                 <li>Your linguistic preferences</li>
                             </ul>
                             <p className='py-2 px-4 bg-amber-200 text-amber-950 m-4 rounded-md'>
-                                By clicking on 'Delete my account,' you will <strong>permanently erase</strong> this data. Please be aware that all internal data, such as your progress and scores within our application, will also be lost.
+                                By clicking on Delete my account, you will <strong>permanently erase</strong> this data. Please be aware that all internal data, such as your progress and scores within our application, will also be lost.
                             </p>
                         </div>
 
@@ -53,7 +53,7 @@ export default async function DeleteAccountPage() {
                                 <li>تفضيلاتك اللغوية</li>
                             </ul>
                             <p className='py-2 px-4 bg-amber-200 text-amber-950 m-4 rounded-md'>
-                                بالنقر على 'حذف حسابي'، ستقوم<strong> بمسح هذه البيانات بشكل دائم</strong>. يُرجى ملاحظة أن جميع البيانات الداخلية، مثل تقدمك ونقاطك داخل تطبيقنا، ستفقد أيضًا.
+                                بالنقر على حذف حسابي، ستقوم<strong> بمسح هذه البيانات بشكل دائم</strong>. يُرجى ملاحظة أن جميع البيانات الداخلية، مثل تقدمك ونقاطك داخل تطبيقنا، ستفقد أيضًا.
                             </p>
                         </div>
 
@@ -61,7 +61,7 @@ export default async function DeleteAccountPage() {
                         <div className='p-8 md:w-1/2 mb-2'>
 
                             <h1 className='font-semibold'>Suppression de Compte</h1>
-                            <p>Vous avez la possibilité de supprimer définitivement votre compte associé à l'adresse e-mail <strong>{data.user.email}</strong>.</p>
+                            <p>Vous avez la possibilité de supprimer définitivement votre compte associé à l&apos;adresse e-mail <strong>{data.user.email}</strong>.</p>
                             <p>Toutes les informations conservées par notre plateforme sont essentielles au bon fonctionnement de notre application. Nous stockons les éléments suivants :</p>
                             <ul className='list-disc px-8'>
                                 <li>Votre nom complet</li>
@@ -70,7 +70,7 @@ export default async function DeleteAccountPage() {
                                 <li>Vos préférences linguistiques</li>
                             </ul>
                             <p className='py-2 px-4 bg-amber-200 text-amber-950 m-4 rounded-md'>
-                                En cliquant sur 'Supprimer mon compte', vous <strong>effacerez de manière permanente </strong>ces données. Veuillez noter que toutes les données internes, telles que votre progression et vos scores au sein de notre application, seront également perdues.
+                                En cliquant sur Supprimer mon compte, vous <strong>effacerez de manière permanente </strong>ces données. Veuillez noter que toutes les données internes, telles que votre progression et vos scores au sein de notre application, seront également perdues.
                             </p>
                         </div>
 
