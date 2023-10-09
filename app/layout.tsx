@@ -18,6 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics />
+      <Script 
+        async 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4765062324183329"
+        crossOrigin="anonymous"
+        strategy="lazyOnload"
+        />
+
       <body  className={`${inter.className}  ${titane_one.variable} ${noto_sans_arabic.variable}`}>
 
         <SiteHeader />
