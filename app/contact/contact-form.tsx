@@ -42,11 +42,11 @@ const ContactForm: FC = () => {
           htmlFor='name'
           className='mb-3 block text-base font-medium text-black'
         >
-          Full Name
+          الاسم الكامل
         </label>
         <input
           type='text'
-          placeholder='Full Name'
+          placeholder='الاسم الكامل'
           className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
           {...register('name', { required: true })}
         />
@@ -56,7 +56,7 @@ const ContactForm: FC = () => {
           htmlFor='email'
           className='mb-3 block text-base font-medium text-black'
         >
-          Email Address
+          بريدك الالكنروني
         </label>
         <input
           type='email'
@@ -70,18 +70,18 @@ const ContactForm: FC = () => {
           htmlFor='message'
           className='mb-3 block text-base font-medium text-black'
         >
-          Message
+          رسالتك
         </label>
         <textarea
           rows={4}
-          placeholder='Type your message'
+          placeholder='رسالتك'
           className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
           {...register('message', { required: true })}
         ></textarea>
       </div>
       <div>
-        <button className='hover:shadow-form rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
-          Submit
+        <button className='hover:shadow-form rounded-md bg-mpink-100 w-full py-3 px-8 text-base font-semibold text-white outline-none'>
+          ارسال
         </button>
       </div>
     </form>
