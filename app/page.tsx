@@ -7,6 +7,7 @@ import updateImage from '../public/update.png';
 import imagetick from '../public/imagetick.png';
 
  import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Longli - تطبيق لتعلم اللغة الإنجليزية بطريقة ممتعة',
@@ -60,14 +61,16 @@ export default function Home() {
             </div>
 
             <div className="w-full">
-              {/* <Image
-                className=' cursor-pointer'
-                src='/google-play-badge.png'
-                alt="google play download badge"
-                width={300}
-                height={28}
-              /> */}
-              <span className='text-white flex justify-center font-light text-4xl '>...  على البلاي ستور قريبا ...</span>
+              <span className='text-white flex justify-center font-semibold text-xl '> اضغط للتحميل مجانا</span>
+               <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.kalima.longliapp'}>
+                <Image
+                  className=' cursor-pointer'
+                  src='/google-play-badge.png'
+                  alt="google play download badge"
+                  width={300}
+                  height={28}
+                /> 
+               </Link>
             </div>
           </div>
         </div>
@@ -211,6 +214,8 @@ export default function Home() {
             </div>
         </div>
         <div className='mt-8'>
+        <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.kalima.longliapp'}>
+                
             <Image 
               src='/google-play-badge.png' 
               width={256}
@@ -218,6 +223,7 @@ export default function Home() {
               className='cursor-pointer w-64 ' 
               alt="google play download badge"
             />
+               </Link>
             <p className="font-noto ">حمل التطبيق و ابدأ الصعود نحو قمة الاحتراف</p>
         </div>
     </section>
