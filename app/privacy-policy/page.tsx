@@ -33,12 +33,11 @@ export default function Page() {
             <p className="pl-8">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
             <address>
             
-            <p>Kalima<br />
-            08 rue AW cité lombarkia<br/>
+            <p>Kalima apps<br />
+            08 rue <br/>
             05006,Batna<br/>
             Algeria.<br/>
-            Phone: <a href="tel:+1234567890">+213 (0) 6 69 82 06 36</a><br/>
-            Email: <a href="mailto:kalima@gmail.com">kalima@gmail.com</a><br/>    
+            Email: <a href="longliapps@gmail.com">kalima@gmail.com</a><br/>    
             Please retain a copy of this Privacy Policy for your records.</p>
          </address>
     </section >
