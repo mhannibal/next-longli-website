@@ -29,7 +29,8 @@ export default async function SiteHeader() {
                         <li><Link href={'/'}>الرئيسية</Link></li>    
                         <li><a href="#portfolio">المدونة</a></li>
                         <li><a href="#contact">مساعدة</a></li>
-                        <li><a href="#contact">تحميل</a></li>
+                        <li> <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.kalima.longliapp'}>
+              تحميل</Link></li>
                         <li><Link href={'/about'}>تعرف علينا</Link></li>
                         <li><Link href={'/contact'}>اتصل بنا</Link></li>
                         { data.user && (
@@ -43,8 +44,9 @@ export default async function SiteHeader() {
                 <li><Link href={'/'}>الرئيسية</Link></li>    
                 <li><a href="#portfolio">المدونة</a></li>
                 <li><a href="#contact">مساعدة</a></li>
-                <li><a href="#contact">تحميل</a></li>
-                <li><Link href={'/about'}>تعرف علينا</Link></li>
+                <li> <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.kalima.longliapp'}>
+              تحميل</Link></li>
+               <li><Link href={'/about'}>تعرف علينا</Link></li>
                 <li><Link href={'/contact'}>اتصل بنا</Link></li>
                 { data.user && (
                             <form action="/auth/login" method="post">
