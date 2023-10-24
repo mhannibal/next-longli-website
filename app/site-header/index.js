@@ -27,11 +27,11 @@ export default async function SiteHeader() {
                     </div>
                     <ul className="menu">
                         <li><Link href={'/'}>الرئيسية</Link></li>    
-                        <li><a href="#portfolio">المدونة</a></li>
-                        <li><a href="#contact">مساعدة</a></li>
+                        {/* <li><a href="#portfolio">المدونة</a></li>
+                        <li><a href="#contact">مساعدة</a></li> */}
                         <li> <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.kalima.longliapp'}>
               تحميل</Link></li>
-                        <li><Link href={'/about'}>تعرف علينا</Link></li>
+                        {/* <li><Link href={'/about'}>تعرف علينا</Link></li> */}
                         <li><Link href={'/contact'}>اتصل بنا</Link></li>
                         { data.user && (
                             <form action="/auth/login" method="post">
@@ -42,11 +42,11 @@ export default async function SiteHeader() {
             </nav>
             <ul className="hidden md:flex flex-row-reverse gap-4 opacity-0 md:opacity-100">
                 <li><Link href={'/'}>الرئيسية</Link></li>    
-                <li><a href="#portfolio">المدونة</a></li>
-                <li><a href="#contact">مساعدة</a></li>
+                {/* <li><a href="#portfolio">المدونة</a></li>
+                <li><a href="#contact">مساعدة</a></li> */}
                 <li> <Link target="_blank" href={'https://play.google.com/store/apps/details?id=com.kalima.longliapp'}>
               تحميل</Link></li>
-               <li><Link href={'/about'}>تعرف علينا</Link></li>
+               {/* <li><Link href={'/about'}>تعرف علينا</Link></li> */}
                 <li><Link href={'/contact'}>اتصل بنا</Link></li>
                 { data.user && (
                             <form action="/auth/login" method="post">
